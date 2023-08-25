@@ -1,0 +1,80 @@
+/* article1.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.article-content {
+  max-width: 800px;
+  margin: 20px auto; /* Adjust the margin to move content to the left */
+  padding: 60px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #555;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin: 10px 0;
+  color: #777;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+li {
+  font-size: 25px;
+  line-height: 1.5;
+  color: #555;
+}
+.home-icon {
+  font-size: 24px;
+  color: #007bff; /* Change to the color you prefer */
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.home-icon:hover {
+  color: #0056b3; /* Change the hover color */
+}
