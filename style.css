@@ -301,3 +301,21 @@
 .article-list a:hover img {
   transform: scale(1.1); /* Increase the scale value for a larger effect */
 }
+
+.article-list {
+    display: flex;  /* Use flex display to align items */
+    justify-content: space-between;  /* Distribute items along the main axis */
+    margin-top: 20px;
+}
+
+.article-list a {
+    text-decoration: none;
+    color: #11101d;
+    margin: 10px;
+    text-align: center;
+    width: calc(50% - 20px);  /* Divide the width for two articles with margin */
+    box-sizing: border-box;  /* Include padding and border in width calculation */
+    display: flex;  /* Use flex display to align image and text vertically */
+    flex-direction: column;  /* Stack image and text vertically */
+    align-items: center;  /* Center items horizontally */
+}
