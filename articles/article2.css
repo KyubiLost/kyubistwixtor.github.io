@@ -1,77 +1,50 @@
-/* Reset some default styles */
-body, h1, h2, p, ul, li, a {
+/* article1.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
   margin: 0;
   padding: 0;
-}
-
-body {
-  font-family: 'Helvetica Neue', sans-serif;
-  background-color: #f8f9fa;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   min-height: 100vh;
 }
 
-.container {
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  width: 80%;
+.article-content {
   max-width: 800px;
-}
-
-.content {
-  padding: 40px;
+  margin: 20px auto; /* Adjust the margin to move content to the left */
+  padding: 60px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 28px;
   margin-bottom: 10px;
   color: #333;
 }
 
-.subtitle {
-  font-size: 20px;
+h2 {
+  font-size: 24px;
+  margin-top: 20px;
   color: #555;
-  margin-bottom: 20px;
 }
 
-.image-section {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 0;
-}
-
-.image-container {
-  text-align: center;
-}
-
-.image-description {
-  margin-top: 10px;
-  color: #777;
-  font-size: 16px;
-}
-
-.download-section {
-  margin-top: 40px;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  font-size: 18px;
-  line-height: 1.6;
+p {
+  font-size: 22px;
+  line-height: 1.5;
   margin: 10px 0;
-  color: #555;
-  transition: color 0.3s;
+  color: #777;
 }
 
-li:hover {
-  color: #007bff;
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border: 2px solid #ddd;
+  border-radius: 8px;
 }
 
 a {
@@ -84,14 +57,24 @@ a:hover {
   color: #0056b3;
 }
 
+ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+li {
+  font-size: 25px;
+  line-height: 1.5;
+  color: #555;
+}
 .home-icon {
   font-size: 24px;
-  color: #007bff;
+  color: #007bff; /* Change to the color you prefer */
   text-decoration: none;
-  margin: 20px;
-  display: block;
+  margin-bottom: 20px;
+  display: inline-block;
 }
 
 .home-icon:hover {
-  color: #0056b3;
+  color: #0056b3; /* Change the hover color */
 }
