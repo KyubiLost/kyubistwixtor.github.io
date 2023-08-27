@@ -318,6 +318,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-height: 350px; /* Adjust the maximum height as needed */
+    overflow: hidden; /* Hide any overflowing content */
 }
 
 .article-list img {
@@ -330,5 +332,6 @@
 .article-list h2 {
     font-size: 18px;
     margin-top: 10px;
-    line-height: 1.3;  /* Adjust line height for better text presentation */
+    line-height: 1.3;
 }
+
