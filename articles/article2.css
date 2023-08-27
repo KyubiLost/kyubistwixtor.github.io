@@ -1,23 +1,29 @@
-/* article1.css */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #000000;
+/* Reset some default styles */
+body, h1, h2, p, ul, li, a {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   min-height: 100vh;
 }
 
-.article-content {
-  max-width: 800px;
-  margin: 20px auto; /* Adjust the margin to move content to the left */
-  padding: 60px;
+.container {
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 80%;
+  max-width: 800px;
+}
+
+.content {
+  padding: 40px;
 }
 
 h1 {
@@ -26,25 +32,40 @@ h1 {
   color: #333;
 }
 
-h2 {
-  font-size: 24px;
-  margin-top: 20px;
-  color: #555;
+.subtitle {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 20px;
 }
 
-p {
-  font-size: 22px;
-  line-height: 1.5;
-  margin: 10px 0;
+.image-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.image-description {
+  margin-top: 10px;
   color: #777;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  margin: 20px 0;
-  border: 2px solid #ddd;
-  border-radius: 8px;
+.download-section {
+  margin-top: 40px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 10px 0;
+  color: #555;
 }
 
 a {
@@ -57,24 +78,14 @@ a:hover {
   color: #0056b3;
 }
 
-ul {
-  margin: 10px 0;
-  padding-left: 20px;
-}
-
-li {
-  font-size: 25px;
-  line-height: 1.5;
-  color: #555;
-}
 .home-icon {
   font-size: 24px;
-  color: #007bff; /* Change to the color you prefer */
+  color: #007bff;
   text-decoration: none;
-  margin-bottom: 20px;
-  display: inline-block;
+  margin: 20px;
+  display: block;
 }
 
 .home-icon:hover {
-  color: #0056b3; /* Change the hover color */
+  color: #0056b3;
 }
